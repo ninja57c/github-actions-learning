@@ -1,0 +1,19 @@
+
+name: My First GitHub Action
+
+on:
+  push:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Welcome Message
+        run: echo "Hello Ninja! Welcome to GitHub Actions"
+
+      - name: Learning Message
+        run: echo "I am learning CI/CD"
+
+      - name: Success Message
+        run: echo "My first workflow is running!"
